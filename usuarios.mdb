@@ -1,0 +1,9 @@
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100),
+    email VARCHAR(100),
+    senha VARCHAR(255)
+);
+
+INSERT INTO users (nome, email, senha) 
+VALUES ('Danielly Cristinne', 'danielllycor@gmail.com', SHA2('minhasenha', 256));
